@@ -57,11 +57,14 @@
 
       <!-- Content Area -->
       <div class="flex-1">
+        <!-- Loading Spinner (outside content div so it's not replaced) -->
+        <div id="loading" class="hidden bg-white p-6 rounded-lg shadow-md mb-4">
+          <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500 mx-auto"></div>
+        </div>
+        
+        <!-- Content Container -->
         <div id="content" class="bg-white p-6 rounded-lg shadow-md markdown-body">
           <!-- Content will be loaded here -->
-          <div id="loading" class="hidden">
-            <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500 mx-auto"></div>
-          </div>
         </div>
       </div>
     </div>
@@ -84,9 +87,11 @@
       const contentDiv = document.getElementById('content');
       const loadingDiv = document.getElementById('loading');
       
-      // Show loading spinner
+      // Show loading spinner (if it exists)
       contentDiv.innerHTML = '';
-      loadingDiv.classList.remove('hidden');
+      if (loadingDiv) {
+        loadingDiv.classList.remove('hidden');
+      }
       
       try {
         const response = await fetch(path);
@@ -102,7 +107,10 @@
           <span class="block sm:inline">${error.message}</span>
         </div>`;
       } finally {
-        loadingDiv.classList.add('hidden');
+        // Hide loading spinner (if it exists)
+        if (loadingDiv) {
+          loadingDiv.classList.add('hidden');
+        }
       }
     }
 
