@@ -1,0 +1,24 @@
+{
+  "id": "setup/prerequisites",
+  "title": "Prerequisites",
+  "description": "Before you can run the Crypto Price Tracker, you need to have the following software installed on your system:",
+  "source": "@site/docs/setup/prerequisites.md",
+  "sourceDirName": "setup",
+  "slug": "/setup/prerequisites",
+  "permalink": "/docs/setup/prerequisites",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-github-user/crypto-price-tracker/edit/main/docusaurus-docs/docs/setup/prerequisites.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Crypto Price Tracker Documentation",
+    "permalink": "/docs/intro"
+  },
+  "next": {
+    "title": "Installation",
+    "permalink": "/docs/setup/installation"
+  }
+}

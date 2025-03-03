@@ -1,0 +1,24 @@
+{
+  "id": "setup/installation",
+  "title": "Installation",
+  "description": "This guide will walk you through the process of installing and running the Crypto Price Tracker project.",
+  "source": "@site/docs/setup/installation.md",
+  "sourceDirName": "setup",
+  "slug": "/setup/installation",
+  "permalink": "/docs/setup/installation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-github-user/crypto-price-tracker/edit/main/docusaurus-docs/docs/setup/installation.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Prerequisites",
+    "permalink": "/docs/setup/prerequisites"
+  },
+  "next": {
+    "title": "Configuration",
+    "permalink": "/docs/setup/configuration"
+  }
+}

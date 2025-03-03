@@ -1,0 +1,24 @@
+{
+  "id": "architecture/state-management",
+  "title": "State Management",
+  "description": "This document explains the state management approach used in the Crypto Price Tracker application.",
+  "source": "@site/docs/architecture/state-management.md",
+  "sourceDirName": "architecture",
+  "slug": "/architecture/state-management",
+  "permalink": "/docs/architecture/state-management",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-github-user/crypto-price-tracker/edit/main/docusaurus-docs/docs/architecture/state-management.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "API Integration",
+    "permalink": "/docs/architecture/api-integration"
+  },
+  "next": {
+    "title": "Component Overview",
+    "permalink": "/docs/components/component-overview"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "architecture/overview",
+  "title": "Architecture Overview",
+  "description": "This document provides a high-level overview of the Crypto Price Tracker architecture.",
+  "source": "@site/docs/architecture/overview.md",
+  "sourceDirName": "architecture",
+  "slug": "/architecture/overview",
+  "permalink": "/docs/architecture/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-github-user/crypto-price-tracker/edit/main/docusaurus-docs/docs/architecture/overview.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Configuration",
+    "permalink": "/docs/setup/configuration"
+  },
+  "next": {
+    "title": "API Integration",
+    "permalink": "/docs/architecture/api-integration"
+  }
+}
