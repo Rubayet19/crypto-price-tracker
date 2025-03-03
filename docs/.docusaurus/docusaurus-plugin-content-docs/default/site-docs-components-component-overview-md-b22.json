@@ -1,0 +1,24 @@
+{
+  "id": "components/component-overview",
+  "title": "Component Overview",
+  "description": "This document provides an overview of the key components in the Crypto Price Tracker application.",
+  "source": "@site/docs/components/component-overview.md",
+  "sourceDirName": "components",
+  "slug": "/components/component-overview",
+  "permalink": "/docs/components/component-overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-github-user/crypto-price-tracker/edit/main/docusaurus-docs/docs/components/component-overview.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "State Management",
+    "permalink": "/docs/architecture/state-management"
+  },
+  "next": {
+    "title": "Challenges & Solutions",
+    "permalink": "/docs/challenges/solutions"
+  }
+}
