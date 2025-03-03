@@ -39,6 +39,30 @@ npm run start
 
 The documentation will be available at [http://localhost:3000](http://localhost:3000)
 
+## API Configuration
+
+### Obtaining a CoinGecko API Key
+
+1. Go to [CoinGecko API](https://www.coingecko.com/en/api)
+2. Sign up for a free account
+3. Navigate to the API section in your account
+4. Generate a new API key
+
+### Environment Variables
+
+Create a `.env.local` file in the `web-app` directory with the following variables:
+
+```env
+# CoinGecko API Key
+NEXT_PUBLIC_API_KEY=your_api_key_here
+
+# CoinGecko API URL (optional)
+NEXT_PUBLIC_API_URL=https://api.coingecko.com/api/v3
+
+# Default cryptocurrencies (optional, comma-separated)
+NEXT_PUBLIC_DEFAULT_CRYPTOS=bitcoin,ethereum,ripple,cardano,solana
+```
+
 ## Features
 
 - Display live prices of 5 cryptocurrencies (Bitcoin, Ethereum, etc.)
@@ -55,4 +79,4 @@ The documentation will be available at [http://localhost:3000](http://localhost:
 
 ## API Key
 
-This project uses the CoinGecko API. The API key is included in the repository for demonstration purposes.
+This project uses the CoinGecko API. For production use, please obtain your own API key and configure it using environment variables as described above.

@@ -8,12 +8,18 @@ export const DEFAULT_CRYPTOS = ['bitcoin', 'ethereum', 'ripple', 'cardano', 'sol
 /**
  * API key for CoinGecko
  */
-const API_KEY = process.env.NEXT_PUBLIC_API_KEY || 'CG-vdUFSAZyCF9R8r6qUwFLH1nP';
+const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
+if (!API_KEY) {
+  throw new Error('NEXT_PUBLIC_API_KEY environment variable is required');
+}
 
 /**
  * API base URL
  */
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://api.coingecko.com/api/v3';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL;
+if (!API_BASE_URL) {
+  throw new Error('NEXT_PUBLIC_API_URL environment variable is required');
+}
 
 /**
  * Fetches cryptocurrency data from the CoinGecko API
