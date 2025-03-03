@@ -1,6 +1,4 @@
-/**
- * Represents cryptocurrency data from the CoinGecko API
- */
+
 export interface CryptoData {
   id: string;
   symbol: string;

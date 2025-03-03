@@ -15,24 +15,14 @@ const CryptoCard = ({ crypto }: CryptoCardProps) => {
     ? 'text-green-500' 
     : 'text-red-500';
 
-  /**
-   * Format currency value to USD without using locale-specific formatting
-   * to avoid hydration errors
-   */
   const formatCurrency = (value: number) => {
-    // Format with fixed decimal places without locale-specific formatting
     const formatted = value.toFixed(2);
     
-    // Add commas for thousands separators in a predictable way
     const parts = formatted.split('.');
     const integerPart = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
     return `$${integerPart}.${parts[1]}`;
   };
 
-  /**
-   * Format market cap value with appropriate suffix (T, B, M)
-   * without using locale-specific formatting
-   */
   const formatMarketCap = (value: number) => {
     if (value >= 1e12) {
       return `$${(value / 1e12).toFixed(2)}T`;
@@ -44,7 +34,6 @@ const CryptoCard = ({ crypto }: CryptoCardProps) => {
       return `$${(value / 1e6).toFixed(2)}M`;
     }
     
-    // Format without locale-specific methods
     const formatted = value.toFixed(2);
     const parts = formatted.split('.');
     const integerPart = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');

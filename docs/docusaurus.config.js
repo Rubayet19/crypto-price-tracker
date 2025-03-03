@@ -11,7 +11,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo.svg',
 
-  // GitHub pages deployment config
+  
   organizationName: 'Rubayet19', 
   projectName: 'crypto-price-tracker', 
 

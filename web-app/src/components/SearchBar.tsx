@@ -2,9 +2,6 @@
 
 import { useCrypto } from '@/context/CryptoContext';
 
-/**
- * SearchBar component to filter cryptocurrencies
- */
 const SearchBar = () => {
   const { searchTerm, setSearchTerm } = useCrypto();
 

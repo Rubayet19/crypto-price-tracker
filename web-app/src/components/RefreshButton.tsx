@@ -1,8 +1,5 @@
 "use client";
 
-/**
- * RefreshButton component to manually refresh cryptocurrency data
- */
 interface RefreshButtonProps {
   onClick: () => Promise<void>;
 }

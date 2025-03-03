@@ -1,8 +1,5 @@
 "use client";
 
-/**
- * ErrorMessage component to display error messages
- */
 interface ErrorMessageProps {
   message: string;
 }

@@ -4,9 +4,7 @@ import { createContext, useContext, useState, useEffect, ReactNode } from 'react
 import { CryptoData } from '@/types/crypto';
 import { fetchCryptoData } from '@/services/api';
 
-/**
- * Interface for the CryptoContext
- */
+
 interface CryptoContextType {
   cryptoData: CryptoData[];
   filteredData: CryptoData[];
@@ -17,14 +15,9 @@ interface CryptoContextType {
   setSearchTerm: (term: string) => void;
 }
 
-/**
- * Create the CryptoContext with default values
- */
+
 const CryptoContext = createContext<CryptoContextType | undefined>(undefined);
 
-/**
- * CryptoProvider component to wrap the application with the CryptoContext
- */
 export const CryptoProvider = ({ children }: { children: ReactNode }) => {
   const [cryptoData, setCryptoData] = useState<CryptoData[]>([]);
   const [filteredData, setFilteredData] = useState<CryptoData[]>([]);
@@ -32,9 +25,7 @@ export const CryptoProvider = ({ children }: { children: ReactNode }) => {
   const [error, setError] = useState<Error | null>(null);
   const [searchTerm, setSearchTerm] = useState<string>('');
 
-  /**
-   * Fetch cryptocurrency data from the API
-   */
+
   const fetchData = async () => {
     setIsLoading(true);
     setError(null);
@@ -49,16 +40,12 @@ export const CryptoProvider = ({ children }: { children: ReactNode }) => {
     }
   };
 
-  /**
-   * Fetch initial data when the component mounts
-   */
+
   useEffect(() => {
     fetchData();
   }, []);
 
-  /**
-   * Filter data when search term changes
-   */
+ 
   useEffect(() => {
     if (searchTerm.trim() === '') {
       setFilteredData(cryptoData);
@@ -72,9 +59,7 @@ export const CryptoProvider = ({ children }: { children: ReactNode }) => {
     }
   }, [searchTerm, cryptoData]);
 
-  /**
-   * Refresh data manually
-   */
+
   const refreshData = async () => {
     await fetchData();
   };

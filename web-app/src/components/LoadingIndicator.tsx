@@ -1,8 +1,6 @@
 "use client";
 
-/**
- * LoadingIndicator component to display a loading spinner
- */
+
 const LoadingIndicator = () => {
   return (
     <div className="flex justify-center items-center py-12">

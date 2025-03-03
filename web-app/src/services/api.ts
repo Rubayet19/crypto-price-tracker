@@ -1,21 +1,14 @@
 import { CryptoData } from '@/types/crypto';
 
-/**
- * Default cryptocurrencies to display
- */
 export const DEFAULT_CRYPTOS = ['bitcoin', 'ethereum', 'ripple', 'cardano', 'solana'];
 
-/**
- * API key for CoinGecko
- */
+
 const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
 if (!API_KEY) {
   throw new Error('NEXT_PUBLIC_API_KEY environment variable is required');
 }
 
-/**
- * API base URL
- */
+
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 if (!API_BASE_URL) {
   throw new Error('NEXT_PUBLIC_API_URL environment variable is required');
