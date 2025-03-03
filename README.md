@@ -37,7 +37,7 @@ npm install
 npm run start
 ```
 
-The documentation will be available at [http://localhost:3000](http://localhost:3000)
+The documentation will be available at [http://localhost:3001](http://localhost:3001)
 
 ## API Configuration
 

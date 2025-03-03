@@ -11,7 +11,7 @@ export default {
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
   "favicon": "img/logo.svg",
-  "organizationName": "your-github-user",
+  "organizationName": "Rubayet19",
   "projectName": "crypto-price-tracker",
   "presets": [
     [
@@ -20,10 +20,6 @@ export default {
         "docs": {
           "sidebarPath": "/Users/rubayet/Code/Projects/crypto-price-tracker/docs/sidebars.js",
           "editUrl": "https://github.com/your-github-user/crypto-price-tracker/edit/main/docusaurus-docs/"
-        },
-        "blog": {
-          "showReadingTime": true,
-          "editUrl": "https://github.com/your-github-user/crypto-price-tracker/edit/main/docusaurus-docs/blog/"
         },
         "theme": {
           "customCss": "/Users/rubayet/Code/Projects/crypto-price-tracker/docs/src/css/custom.css"
@@ -38,20 +34,8 @@ export default {
         "alt": "Crypto Price Tracker Logo",
         "src": "img/logo.svg"
       },
-      "items": [
-        {
-          "type": "doc",
-          "docId": "intro",
-          "position": "left",
-          "label": "Documentation"
-        },
-        {
-          "href": "https://github.com/your-github-user/crypto-price-tracker",
-          "label": "GitHub",
-          "position": "right"
-        }
-      ],
-      "hideOnScroll": false
+      "hideOnScroll": false,
+      "items": []
     },
     "footer": {
       "style": "dark",
@@ -78,7 +62,7 @@ export default {
           "items": [
             {
               "label": "GitHub",
-              "href": "https://github.com/your-github-user/crypto-price-tracker"
+              "href": "https://github.com/Rubayet19/crypto-price-tracker"
             }
           ]
         }

@@ -12,8 +12,8 @@ const config = {
   favicon: 'img/logo.svg',
 
   // GitHub pages deployment config
-  organizationName: 'your-github-user', // Usually your GitHub org/user name.
-  projectName: 'crypto-price-tracker', // Usually your repo name.
+  organizationName: 'Rubayet19', 
+  projectName: 'crypto-price-tracker', 
 
   presets: [
     [
@@ -22,14 +22,8 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
+
           editUrl: 'https://github.com/your-github-user/crypto-price-tracker/edit/main/docusaurus-docs/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/your-github-user/crypto-price-tracker/edit/main/docusaurus-docs/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -47,19 +41,7 @@ const config = {
           alt: 'Crypto Price Tracker Logo',
           src: 'img/logo.svg',
         },
-        items: [
-          {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Documentation',
-          },
-          {
-            href: 'https://github.com/your-github-user/crypto-price-tracker',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
+
       },
       footer: {
         style: 'dark',
@@ -86,7 +68,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/your-github-user/crypto-price-tracker',
+                href: 'https://github.com/Rubayet19/crypto-price-tracker',
               },
             ],
           },
